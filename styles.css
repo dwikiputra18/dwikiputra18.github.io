@@ -5,6 +5,7 @@
   }
   
   body {
+    padding-top: 40px; /* Sesuaikan dengan tinggi navbar */
     font-family: Arial, sans-serif;
     line-height: 1.6;
     color: #333;
