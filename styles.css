@@ -29,33 +29,69 @@
     width: 100%; /* Memastikan navbar mencakup seluruh lebar layar */
     z-index: 1000; /* Agar navbar berada di atas elemen lain */
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Tambahkan sedikit bayangan */
-}
-
+  }
+  
   nav .logo {
     font-size: 20px;
     font-weight: bold;
   }
-
+  
   nav ul {
     list-style: none;
     display: flex;
     gap: 15px;
   }
-
+  
   nav ul li {
-    display: inline;
+    position: relative; /* Dibutuhkan untuk dropdown */
   }
-
+  
   nav ul li a {
     text-decoration: none;
     color: rgb(0, 0, 0);
     font-size: 14px;
     transition: color 0.3s;
   }
-
+  
   nav ul li a:hover {
-    color: #ddd;
+    color: #007bff;
   }
+  
+  /* Dropdown menu styling */
+  .dropdown-menu {
+    display: none; /* Sembunyikan dropdown secara default */
+    position: absolute;
+    top: 100%; /* Letakkan di bawah menu "Projects" */
+    left: 0;
+    background-color: #ffffff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    list-style: none;
+    padding: 10px 0;
+    margin: 0;
+    z-index: 1000;
+  }
+  
+  .dropdown-menu li {
+    padding: 5px 20px;
+  }
+  
+  .dropdown-menu li a {
+    color: rgb(0, 0, 0);
+    text-decoration: none;
+    font-size: 14px;
+    display: block;
+    transition: background-color 0.3s ease, color 0.3s ease;
+  }
+  
+  .dropdown-menu li a:hover {
+    background-color: #007bff;
+    color: white;
+  }
+  
+  .dropdown:hover .dropdown-menu {
+    display: block; /* Tampilkan dropdown saat kursor berada di atas elemen "Projects" */
+  }
+  
   
   header {
     text-align: right;
