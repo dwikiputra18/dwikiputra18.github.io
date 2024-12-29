@@ -134,6 +134,7 @@
     .masthead {
         background-size: contain; /* Menyesuaikan dengan layar, seluruh gambar terlihat */
         background-repeat: no-repeat; /* Hindari pengulangan gambar */
+        padding-bottom: 0rem;
     }
 }
 /* About Me Section */
@@ -188,7 +189,10 @@
 /* Responsiveness */
 @media (max-width: 768px) {
   .about-me {
-      padding: 0rem; /* Jarak antar elemen menjadi 0.5rem */
+    height: auto; /* Pastikan tinggi otomatis menyesuaikan isi */
+    padding-bottom: 20px; /* Tambahkan padding untuk jarak yang aman */
+    margin-top: 0;
+    padding-top: 20px;
   }
 
   .about-card {
