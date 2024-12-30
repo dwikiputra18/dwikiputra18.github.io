@@ -121,13 +121,7 @@
     text-align: center;
     overflow: hidden; /* Mencegah elemen di luar area */
 }
-.parallax {
-  background-attachment: fixed; /* Membuat latar belakang tetap */
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  position: relative;
-}
+
 
 /* Responsive Adjustments */
 @media (max-width: 1024px) { /* Untuk tablet */
