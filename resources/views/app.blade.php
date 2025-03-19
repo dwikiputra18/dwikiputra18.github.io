@@ -48,8 +48,8 @@
 and HTML5. Experience in developing promotional websites for car showrooms in Pekanbaru.</p>
     <a href="{{ url('/about') }}" class="btn btn-secondary">Read more</a>
 </div>
-
-<div class="container mt-4 bg-light text-dark p-4">
+@include('components.using')
+<div class="container mt-4 bg-light text-dark p-4" id="portfolio">
     <h2>Latest Projects</h2>
     <div class="row">
         @foreach([1, 2, 3] as $num)
@@ -70,7 +70,7 @@ and HTML5. Experience in developing promotional websites for car showrooms in Pe
     </div>
 </div>
 
-<div class="container mt-4">
+<div class="container mt-4" id="services">
     <h2>Services</h2>
     <div class="row">
         @foreach(['Web Development', 'UI/UX Design', 'SEO Optimization'] as $service)
@@ -89,7 +89,7 @@ and HTML5. Experience in developing promotional websites for car showrooms in Pe
     </div>
 </div>
 
-<div class="container mt-4 bg-secondary text-white p-4">
+<div class="container mt-4 bg-secondary text-white p-4" id="contact">
     <h2>Hire Me</h2>
     <form action="{{ url('/contact') }}" method="post">
         @csrf
@@ -107,10 +107,6 @@ and HTML5. Experience in developing promotional websites for car showrooms in Pe
         </div>
         <button type="submit" class="btn btn-primary">Send</button>
     </form>
-</div>
-
-<div class="footer bg-dark text-white text-center p-4">
-    &copy; {{ date('Y') }} All rights reserved.
 </div>
 
 @endsection
